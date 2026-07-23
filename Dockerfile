@@ -34,25 +34,8 @@ ENV IS_DOCKER=true
 
 RUN mkdir -p ~/.pi/agent/
 
-RUN printf '{\n\
-  "providers": {\n\
-    "llama-cpp": {\n\
-      "baseUrl": "http://localhost:8080/v1",\n\
-      "api": "openai-completions",\n\
-      "apiKey": "not-needed",\n\
-      "compat": {\n\
-        "supportsDeveloperRole": false\n\
-      },\n\
-      "models": [\n\
-        {\n\
-          "id": "Qwen3.6-27B-UD-Q6_K_XL.gguf",\n\
-          "contextWindow": 99000\n\
-        }\n\
-      ]\n\
-    }\n\
-  }\n\
-}\n' > /home/piuser/.pi/agent/models.json
-
+WORKDIR /home/piuser/.pi/agent
+COPY models.json .
 
 WORKDIR /home/piuser/workspace
 
