@@ -10,7 +10,7 @@
       "models": [
         {
           "id": "Qwen3.6-27B-UD-Q6_K_XL.gguf",
-          "contextWindow": 99000
+          "contextWindow": 79000
         }
       ]
     }
