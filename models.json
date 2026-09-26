@@ -10,7 +10,7 @@
       "models": [
         {
           "id": "Qwen3.8-swift",
-          "contextWindow": 120000
+          "contextWindow": 131000
         }
       ]
     }
