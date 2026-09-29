@@ -2,7 +2,9 @@
 
 set -euo pipefail
 
-uv sync
-source .venv/bin/activate
+if [ -f pyproject.toml ]; then
+  uv sync
+  source .venv/bin/activate
+fi
 
 exec "$@"
