@@ -13,6 +13,20 @@
           "contextWindow": 131000
         }
       ]
+    },
+    "ext": {
+      "baseUrl": "",
+      "api": "openai-completions",
+      "apiKey": "",
+      "models": [
+        {
+          "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+          "name": "DeepSeek-V4-Flash-0731",
+          "contextWindow": 120000,
+          "maxTokens": 65536
+        }
+      ]
     }
   }
 }
+
